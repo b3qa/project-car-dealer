@@ -1,26 +1,8 @@
-# Estructuras de datos
+# Repositorio de Base de Datos
 
-## Como generar un archivo Dump (MariaDB)
+Estos programas estan dieñados para funcionar con MariaDB, por lo que pueden trabajar con MySQL también.
 
-Instalar utilierias en Linux
+## Estructura de carpetas
 
-``` bash
-sudo apt-get install -y mariadb-client
-```
-
-Ejecutar mysqldump
-
-``` bash
-mysqldump --no-data -u root -p tbd_autos > dump_tbd_autos.sql
-```
-
-## Generar archivo Dump desde un contenedor de Docker
-
-Ejecutar el siguiente comando desde la linea de comandos donde se esta ejecutando Docker
-
-``` bash
-sudo docker exec $ONTAINER_ID /usr/bin/mysqldump -u root --password=$PASSWORD_ROOT tdb_autos > ump_tbd_autos.sql
-
-```
-
-Depositar el archivo en la ruta dumps
+* [dumps](dumps): Contiene archivos dump para creacion de proyecto en base de datos
+* [procedures](procedures): Contiene información de stored procedures y funciones
